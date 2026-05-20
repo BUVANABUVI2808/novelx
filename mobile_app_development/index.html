@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Novelx Landing Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo-white.png" alt="" class="img-fluid"></a>
+      </div>
+      <a class="g-store-btn1" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"> Contact! </a>
+
+      <!-- <nav id="navbar" class="navbar"> -->
+      <!-- <ul> -->
+      <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+      <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
+      <!-- <li><a class="nav-link scrollto" href="#features">Features</a></li> -->
+      <!-- <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li> -->
+      <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+      <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
+      <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> -->
+      <!-- <ul> -->
+      <!-- <li><a href="#">Drop Down 1</a></li> -->
+      <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a> -->
+      <!-- <ul> -->
+      <!-- <li><a href="#">Deep Drop Down 1</a></li> -->
+      <!-- <li><a href="#">Deep Drop Down 2</a></li> -->
+      <!-- <li><a href="#">Deep Drop Down 3</a></li> -->
+      <!-- <li><a href="#">Deep Drop Down 4</a></li> -->
+      <!-- <li><a href="#">Deep Drop Down 5</a></li> -->
+      <!-- </ul> -->
+      <!-- </li> -->
+      <!-- <li><a href="#">Drop Down 2</a></li> -->
+      <!-- <li><a href="#">Drop Down 3</a></li> -->
+      <!-- <li><a href="#">Drop Down 4</a></li> -->
+      <!-- </ul> -->
+      <!-- </li> -->
+      <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+      <!-- </ul> -->
+      <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
+      <!-- </nav> -->
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out">
+            <h2>Get Your Business into Everyone's Pockets!</h2>
+            <h1>By Award Winning Mobile Apps Development Company</h1>
+            <div class="text-center text-lg-start">
+              <a href="#" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a Free
+                Quote</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6  order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <!-- <img src="assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
+          <div class="c-form">
+            <h1 class="f-title">Get in Touch - We're Here to Help</h1>
+            <!-- <form action="..forms/contact.php" method="post" role="form" class="php-email-form">
+               <div class="mb-3">
+				  <label for="exampleFormControlInput1" class="form-label">Name</label>
+				  <input type="text" class="form-control" id="exampleFormControlInput1">
+				</div>
+				<div class="mb-3">
+				  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+				  <input type="email" class="form-control" id="exampleFormControlInput1">
+				</div>
+                <div class="mb-3">
+				  <label for="exampleFormControlInput1" class="form-label">Mobile</label>
+				  <input type="number" class="form-control" id="exampleFormControlInput1" >
+				</div>
+				<div class="mb-3">
+				  <label for="exampleFormControlTextarea1" class="form-label">Requirement </label>
+				  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				</div>
+              <div class="text-center "><button type="submit" class="g-store-btn">Get a Free Quote</button></div>
+            </form> -->
+            <?php if (!empty($errorMsg)) { ?>
+            <div style="color:red; margin-bottom:10px;">
+              <?php echo htmlspecialchars($errorMsg); ?>
+            </div>
+            <?php } ?>
+            <form action="form_submit.php" method="post">
+
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control" name="email" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Mobile</label>
+                <input type="text" class="form-control" name="phone" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Requirement</label>
+                <textarea class="form-control" name="requirement" rows="3" required></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="g-store-btn">
+                  Get a Free Quote
+                </button>
+              </div>
+
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section class="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <p>Build App For Your Business With India's Leading App Development Company!</p>
+        </div>
+        <div class="box-googleplay" data-aos="fade-left">
+          <div class="row">
+            <div class="col-lg-7 col-sm-12">
+              <div class="g-store">
+                <img src="assets/img/g-store.png">
+                <h1>Android App Development</h1>
+                <p>Attract more customers on popular Android mobile devices using Weft's end-to-end android mobile app
+                  development, integration, implementation, and support services.</p>
+                <a href="#" class="g-store-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Talk to experts
+                  now</a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+              <img src="assets/img/g-store-img.png" class="app-store-img">
+            </div>
+          </div>
+        </div>
+        <div class="box-googleplay" data-aos="fade-right">
+          <div class="row">
+            <div class="col-lg-7 col-sm-12">
+              <div class="g-store">
+                <img src="assets/img/ios-store.png">
+                <h1>iOS App Development</h1>
+                <p>Aid businesses to reach more business goals using iOS mobile app development tools Gain an edge with
+                  Online turnkey marketplace solutions, digital enablements, design and development services, and growth
+                  solutions.</p>
+                <a href="#" class="g-store-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Talk to experts
+                  now</a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+              <img src="assets/img/app-store-img.png" class="app-store-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <p>Our Products</p>
+        </div>
+
+        <div class="row" data-aos="fade-left">
+          <div class="col-lg-3 col-md-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+              <i class='bx bx-car'></i>
+              <h3><a href="">Online Cab Booking/Riding App</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <i class='bx bx-book-content'></i>
+              <h3><a href="">E-Learning App</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+              <i class='bx bx-cart-alt'></i>
+              <h3><a href="">E-Commerce App</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
+              <i class='bx bx-package'></i>
+              <h3><a href="">Food Delivery App</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <i class='bx bx-calculator'></i>
+              <h3><a href="">Productivity apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
+              <i class='bx bx-camera-movie'></i>
+              <h3><a href="">Entertainment apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bx-game'></i>
+              <h3><a href="">Game apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bx-heart'></i>
+              <h3><a href="">Health and Fitness Apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bxs-cable-car'></i>
+              <h3><a href="">Travel and Tourism Apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bx-wallet'></i>
+              <h3><a href="">Finance and Budgeting Apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bx-news'></i>
+              <h3><a href="">News and Magazine Apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo >></a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bxl-meta'></i>
+              <h3><a href="">Social Networking Apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo >></a>
+          </div>
+
+
+          <!-- <div class="col-lg-3 col-md-4 mt-4"> -->
+          <!-- <div class="icon-box" data-aos="zoom-in" data-aos-delay="550"> -->
+          <!-- <i class="ri-base-station-line" style="color: #ff5828;"></i> -->
+          <!-- <h3><a href="">Verdo Park</a></h3> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="col-lg-3 col-md-4 mt-4"> -->
+          <!-- <div class="icon-box" data-aos="zoom-in" data-aos-delay="600"> -->
+          <!-- <i class="ri-fingerprint-line" style="color: #29cc61;"></i> -->
+          <!-- <h3><a href="">Flavor Nivelanda</a></h3> -->
+          <!-- </div> -->
+          <!-- </div> -->
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+
+    <br>
+    <div class="section-title aos-init aos-animate" data-aos="fade-up">
+
+      <p>Check Our Projects</p>
+    </div>
+
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+        <div class="slider">
+          <input type="radio" name="testimonial" id="t-1">
+          <input type="radio" name="testimonial" id="t-2">
+          <input type="radio" name="testimonial" id="t-3" checked>
+          <input type="radio" name="testimonial" id="t-4">
+          <input type="radio" name="testimonial" id="t-5">
+          <div class="testimonials">
+            <label class="item" for="t-1">
+              <img class="carousel-image " src="assets/img/gallery/gallery-1.jpg" alt="Image 1">
+              <p class="c-title">Neogen Care</p>
+            </label>
+            <label class="item" for="t-2">
+              <img class="carousel-image " src="assets/img/gallery/gallery-2.jpg" alt="Image 1">
+              <p class="c-title">Neogen Clinician App</p>
+            </label>
+            <label class="item" for="t-3">
+              <img class="carousel-image " src="assets/img/gallery/gallery-3.jpg" alt="Image 1">
+              <p class="c-title">Young Innovators <br>Programme</p>
+            </label>
+            <label class="item" for="t-4">
+              <img class="carousel-image " src="assets/img/gallery/gallery-4.jpg" alt="Image 1">
+              <p class="c-title">Knokkout <br>E-Commerce</p>
+            </label>
+            <label class="item" for="t-5">
+              <img class="carousel-image " src="assets/img/gallery/gallery-5.png" alt="Image 1">
+              <p class="c-title">Cloi.ai </p>
+            </label>
+          </div>
+          <br />
+          <div class="dots">
+            <label for="t-1"></label>
+            <label for="t-2"></label>
+            <label for="t-3"></label>
+            <label for="t-4"></label>
+            <label for="t-5"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row aos-init aos-animate" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+
+              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="0"
+                class="purecounter">25+</span>
+              <p>Team</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="0"
+                class="purecounter">2</span>
+              <p>Location</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="0"
+                class="purecounter">5</span>
+              <p>Year</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="0"
+                class="purecounter">200+</span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="app-platform">
+      <div class="container-fluid">
+        <div class="section-title" data-aos="fade-up">
+          <p>How We Develop Your Product</p>
+        </div>
+        <img src="assets/img/app-dev.jpg" class="app-dev-img">
+      </div>
+    </section>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="c-box">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="g-store1">
+                <h1><strong>Over 250+ Satisfied Clients & Growing</strong></h1>
+                <img src="assets/img/c-img.jpg" class="c-l-img">
+              </div>
+              <div class="review">
+                <!-- <p>We had an incredible experience working with Weft and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the product concept so quickly.</p> -->
+                <!-- <strong>Mr.Jhon Wick</strong><br> -->
+                <!-- <span>business entrepreneur</span> -->
+                <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+                  <div class="carousel-inner w-100">
+                    <div class="carousel-item active">
+                      <div class="col-md-12">
+                        <div class="card card-body">
+                          <strong>Exceptional Service!</strong>
+                          <p>"Working with Novelx Technologies was an amazing experience. They helped bring our app idea
+                            to life seamlessly and delivered beyond our expectations. Highly recommend!"</p>
+                          <strong>Mr.Mathew</strong>
+                          <span>Cloi.ai</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-12">
+                        <div class="card card-body">
+                          <strong>Professional and Timely</strong>
+                          <p>"Novelx Technologies team was professional, understanding our requirements perfectly. The
+                            project was completed on time with excellent quality. Great job!"</p>
+                          <strong>Mr.Parameswaran</strong>
+                          <span>Omega OS</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-12">
+                        <div class="card card-body">
+                          <strong>Innovative and Creative!</strong>
+                          <p>"Novelx Technologies displayed remarkable creativity and innovation in designing our mobile
+                            app. Their attention to detail and dedication to our project was commendable."</p>
+                          <strong>Mr.Sam </strong>
+                          <span>Blisser</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-12">
+                        <div class="card card-body">
+                          <strong>Excellent Communication</strong>
+                          <p>"One of the best aspects of working with Novelx was their clear communication. They kept us
+                            updated throughout the project, ensuring a smooth and efficient process."</p>
+                          <strong>Mr.Karthigeyan</strong>
+                          <span>Coin zeb</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-12">
+                        <div class="card card-body">
+                          <strong>Highly Recommended!</strong>
+                          <p>"I can't speak highly enough about Novelx Technologies. They understood our concept and
+                            transformed it into a highly functional app. Exceptional quality and service."</p>
+                          <strong>Mr.Ranith</strong><br>
+                          <!-- <span>Infinix</span> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+
+              <form action="form_submit.php" method="post">
+
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" name="name" required>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Email address</label>
+                  <input type="email" class="form-control" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Mobile</label>
+                  <input type="text" class="form-control" name="phone" required>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Requirement</label>
+                  <textarea class="form-control" name="requirement" rows="3" required></textarea>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="g-store-btn">
+                    Get a Free Quote
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+    <div class="quick_contact">
+      <a href="https://api.whatsapp.com/send?phone=+918754993203&text=hello i have a app enquiry" class="qwhtsapp"
+        target="_blank">
+        <i class="bx bxl-whatsapp quick_contact_icon"></i>
+      </a>
+    </div>
+    <div class="quick_contact1">
+      <a href="tel:+918754993203" class="qcall" target="_blank">
+        <i class="bx bxs-phone-call quick_contact_icon"></i>
+      </a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Enquiry</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="output_message text-center"></div>
+            <form action="form_submit.php" method="post">
+              <div class="form-group mt-3 ">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+              </div>
+              <div class="form-group mt-3  ">
+                <input type="mobile" class="form-control" name="phone" id="mobile" placeholder="Your Mobile"
+                  required="">
+              </div>
+              <div class="form-group mt-3 ">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="requirement" rows="5" placeholder="Requirements"
+                  required></textarea>
+              </div>
+              <div class="text-center"><button class="g-store-btn1" type="submit">Get a Free Quote</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="text-center boxi-icon">
+        <i class='bx bxl-facebook-circle'></i>
+        <i class='bx bxl-instagram-alt'></i>
+        <i class='bx bxl-twitter'></i>
+        <i class='bx bxl-linkedin'></i>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Novelx Technologies</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script>
+    $('.carousel .carousel-item').each(function () {
+      var minPerSlide = 4;
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < minPerSlide; i++) { next = next.next(); if (!next.length) { next = $(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); }
+    });
+  </script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

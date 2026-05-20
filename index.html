@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Novelx Mobile app develelopment</title>
+  <meta content="" name="Novelx Mobile app develelopment">
+  <meta content="" name="Novelx Mobile app develelopment">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11371890843"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11371890843');
+  </script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero-sequence">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#features">Services</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <section id="hero-sequence">
+    <div class="sequence-canvas-wrap">
+      <canvas id="heroSequenceCanvas"></canvas>
+      <div class="sequence-overlay"></div>
+      <div class="sequence-content" id="sequenceContent">
+        <h2>Novelx Technologies</h2>
+        <p>Transforming ideas into world-class digital experiences</p>
+      </div>
+      <div class="sequence-progress" id="sequenceProgress"></div>
+      <div class="scroll-indicator" id="scrollIndicator">
+        <div class="mouse"></div>
+        <span>Scroll</span>
+      </div>
+      <div class="sequence-loader" id="sequenceLoader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">Loading Experience</div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about-section">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="about-header" data-aos="fade-up">
+        <span class="about-tag">Who We Are</span>
+        <h2 class="about-title">About <span>Novelx Technologies</span></h2>
+        <div class="about-divider"></div>
+      </div>
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-10">
+<p class="about-lead">
+    We are your trusted technology partner in Marthandam, building scalable and high-performance mobile applications for startups, enterprises, and growing businesses across the globe.
+</p>        </div>
+      </div>
+
+      <div class="row about-blocks-row">
+        <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="about-block h-100">
+            <div class="about-block-accent"></div>
+            <div class="about-block-body">
+              <div class="about-block-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h4>Cross-Platform Expertise</h4>
+              <p>Our expertise spans across iOS, Android, and cross-platform app development, helping brands transform innovative ideas into powerful digital products. We specialize in building secure, user-centric, and future-ready mobile applications that not only enhance customer engagement but also create a strong presence in the app marketplace.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="250">
+          <div class="about-block h-100">
+            <div class="about-block-accent"></div>
+            <div class="about-block-body">
+              <div class="about-block-icon"><i class="fa-solid fa-layer-group"></i></div>
+              <h4>End-to-End Development</h4>
+              <p>Our team of experienced mobile app developers in Marthandam focuses on creating customized mobile solutions tailored to your business goals, industry requirements, and target audience. From UI/UX design and application architecture to development, API integration, deployment, testing, maintenance, and ongoing support, we provide end-to-end mobile app development services with a strong emphasis on quality, performance, and scalability.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="350">
+          <div class="about-block h-100">
+            <div class="about-block-accent"></div>
+            <div class="about-block-body">
+              <div class="about-block-icon"><i class="fa-solid fa-industry"></i></div>
+              <h4>Multi-Industry Delivered</h4>
+              <p>As a trusted app development company in Marthandam, we have successfully developed and delivered feature-rich mobile applications across multiple industries including eCommerce, healthcare, education, logistics, finance, and enterprise solutions. Our development approach combines innovation, strategy, and technology to build applications that drive measurable business results.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="450">
+          <div class="about-block h-100">
+            <div class="about-block-accent"></div>
+            <div class="about-block-body">
+              <div class="about-block-icon"><i class="fa-solid fa-rocket"></i></div>
+              <h4>Digital Transformation</h4>
+              <p>With years of expertise in custom mobile application development, we help businesses accelerate digital transformation through reliable and scalable mobile solutions. If you are searching for the best mobile app development company in Marthandam for enterprise-grade applications and high-quality development services, our team is ready to turn your vision into a successful mobile product that stands ahead of the competition.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Strip -->
+      <div class="about-stats" data-aos="fade-up" data-aos-delay="500">
+        <div class="about-stat">
+          <span class="stat-number">250+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="about-stat-divider"></div>
+        <div class="about-stat">
+          <span class="stat-number">6+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="about-stat-divider"></div>
+        <div class="about-stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Team Members</span>
+        </div>
+        <div class="about-stat-divider"></div>
+        <div class="about-stat">
+          <span class="stat-number">12+</span>
+          <span class="stat-label">Industries Served</span>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="team-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <div class="rotate-btn">
+                <i class="fa-solid fa-rotate-right"></i>
+              </div>
+
+              <img class="main-img" src="assets/avatar/avatar1.jpg" data-hover="assets/avatar/avatar2.jpg"
+                alt="Employee Image">
+
+              <div class="d-flex content align-items-center justify-content-center mb-3">
+                <div class="text-center">
+                  <h6>Name</h6>
+                  <p>Designation</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-back">
+              <div class="rotate-btn1">
+                <i class="fa-solid fa-rotate-right"></i>
+              </div>
+              <video controls autoplay muted loop>
+                <source src="assets/avatar/avatar1.mp4" type="video/mp4">
+              </video>
+            </div>
+
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <div class="rotate-btn">
+                <i class="fa-solid fa-rotate-right"></i>
+              </div>
+
+              <img class="main-img" src="assets/avatar/avatar1.jpg" data-hover="assets/avatar/avatar2.jpg"
+                alt="Employee Image">
+
+              <div class="d-flex content align-items-center justify-content-center mb-3">
+                <div class="text-center">
+                  <h6>Name</h6>
+                  <p>Designation</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-back">
+              <div class="rotate-btn1">
+                <i class="fa-solid fa-rotate-right"></i>
+              </div>
+              <video controls autoplay muted loop>
+                <source src="assets/video/profile-video.mp4" type="video/mp4">
+              </video>
+            </div>
+
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="card-inner">
+
+            <div class="card-front">
+              <div class="rotate-btn">
+                <i class="fa-solid fa-rotate-right"></i>
+              </div>
+
+              <img class="main-img" src="assets/avatar/avatar1.jpg" data-hover="assets/avatar/avatar2.jpg"
+                alt="Employee Image">
+
+              <div class="d-flex content align-items-center justify-content-center mb-3">
+                <div class="text-center">
+                  <h6>Name</h6>
+                  <p>Designation</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-back">
+              <div class="rotate-btn1">
+                <i class="fa-solid fa-rotate-right"></i>
+              </div>
+              <video controls autoplay muted loop>
+                <source src="assets/video/profile-video.mp4" type="video/mp4">
+              </video>
+            </div>
+
+          </div>
+        </div>
+
+      </div> -->
+    </div>
+  </section>
+
+  <!-- ======= Why novelX Section ======= -->
+  <section id="why-novelx" class="why-novelx-section">
+    <div class="container-fluid">
+      <!-- Section Header -->
+      <div class="why-header" data-aos="fade-up">
+        <h2 class="why-title">Why <span>novelX</span></h2>
+        <p class="why-subtitle">We don't just build software. We build digital future-ready businesses.</p>
+      </div>
+
+      <!-- Main Content Box -->
+      <div class="why-content-wrapper" data-aos="fade-up" data-aos-delay="100">
+        <div class="why-content-container">
+          <!-- Left Section -->
+          <div class="why-left-section">
+            <div class="why-promise-tag">
+              <i class="fa-solid fa-star"></i> OUR PROMISE
+            </div>
+            <h3 class="why-main-heading">
+              Turning Ideas into
+              <span class="why-red-text">Powerful Digital Reality</span>
+            </h3>
+            <p class="why-description">
+              At novelX, we combine innovation, strategy, and technology to deliver software solutions that drive efficiency, scalability, and measurable business growth.
+            </p>
+
+            <!-- Features Grid -->
+            <div class="why-features-grid">
+              <div class="why-feature-item" data-aos="zoom-in" data-aos-delay="150">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="feature-text">
+                  <div class="feature-number">100%</div>
+                  <div class="feature-label">Custom Built Solutions</div>
+                </div>
+              </div>
+
+              <div class="why-feature-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="feature-text">
+                  <div class="feature-number">Scalable</div>
+                  <div class="feature-label">Future-Ready Architecture</div>
+                </div>
+              </div>
+
+              <div class="why-feature-item" data-aos="zoom-in" data-aos-delay="250">
+                <div class="feature-icon">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+                <div class="feature-text">
+                  <div class="feature-number">Secure</div>
+                  <div class="feature-label">Reliable & High-Performance</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="why-right-section">
+            <!-- Card 1 -->
+            <div class="why-benefit-card" data-aos="fade-left" data-aos-delay="150">
+              <div class="card-icon-wrapper">
+                <div class="card-icon">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4>Consult. Understand. Deliver.</h4>
+                <p>We go beyond code by visiting your premises, understanding workflows, and identifying opportunities to create real impact.</p>
+              </div>
+              <div class="card-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="why-benefit-card" data-aos="fade-left" data-aos-delay="200">
+              <div class="card-icon-wrapper">
+                <div class="card-icon">
+                  <i class="fa-solid fa-cube"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4>Tailored for Every Industry</h4>
+                <p>From enterprise CRM to education platforms and mobile apps, we build solutions that fit your unique business needs.</p>
+              </div>
+              <div class="card-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="why-benefit-card" data-aos="fade-left" data-aos-delay="250">
+              <div class="card-icon-wrapper">
+                <div class="card-icon">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+              </div>
+              <div class="card-content">
+                <h4>Built for Performance & Growth</h4>
+                <p>High-performance, scalable, and secure applications that streamline operations and accelerate digital transformation.</p>
+              </div>
+              <div class="card-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Promise Section -->
+        <div class="why-promise-section" data-aos="fade-up" data-aos-delay="300">
+          <div class="promise-icon">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div class="promise-text">
+            <h4>Your Vision. Our Expertise. Limitless Possibilities.</h4>
+            <p>We partner with enterprises, institutions, and ambitious businesses to create long-term value through technology.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Why novelX Section -->
+
+<section class="service-section">
+    <div class="container">
+
+        <div class="section-title">
+            <h6>Our Exciting & Inspiring Web Design Services</h6>
+            <h5 class="text-danger fw-bold">Everything Your Needs Under One Roof</h5>
+        </div>
+
+        <div class="service-grid">
+
+            <!-- CARD 1 -->
+            <div class="service-card">
+                <div class="corner-shape"></div>
+
+                <div class="service-icon">
+<i class="bi bi-pc-display"></i>                </div>
+
+                <h3>Website Designing</h3>
+
+                <p>
+                    We design websites that are creative, mobile responsive,
+                    lag-free, eye-catching, and SEO friendly. We also provide
+                    custom mobile web design services with modern UI and
+                    scalable architecture for businesses.
+                </p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="service-card">
+                <div class="corner-shape"></div>
+
+                <div class="service-icon">
+<i class="bi bi-terminal"></i>                </div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    We create highly optimized responsive web applications
+                    ensuring speed, security, scalability, and business growth.
+                    Our expertise includes Laravel, APIs, CRM systems, and
+                    enterprise-grade web solutions.
+                </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="service-card">
+                <div class="corner-shape"></div>
+
+                <div class="service-icon">
+<i class="bi bi-globe-central-south-asia"></i>                </div>
+
+                <h3>Static Website</h3>
+
+                <p>
+                    We develop professional static websites for startups and
+                    businesses with modern layouts, mobile-friendly interfaces,
+                    and SEO-focused structure to improve branding and customer
+                    engagement.
+                </p>
+            </div>
+  <div class="service-card">
+                <div class="corner-shape"></div>
+
+                <div class="service-icon">
+<i class="bi bi-globe-central-south-asia"></i>                </div>
+
+                <h3>Dynamic Website</h3>
+
+                <p>
+                   We offer business-focused, dynamic, and data-driven web development services that are suitable for businesses of all types. Whether a small business or a big multinational corporation, we provide high-quality web design solutions, applying our expertise to create everything from sleek, simple layouts to customized data-driven websites created to your needs.
+                </p>
+            </div>
+              <div class="service-card">
+                <div class="corner-shape"></div>
+
+                <div class="service-icon">
+<i class="bi bi-globe-central-south-asia"></i>                </div>
+
+                <h3>E-Commerce Website</h3>
+
+                <p>
+Utilizing our expertise in shopping cart development, well-structured e-commerce front stores, and implementing our unique web design services you can maximize the leads and grow your business. With over 50+ pre-built website templates and a rich portfolio of 80+ features, our platform strengthens you to effortlessly launch and manage your online e-commerce store.                </p>
+            </div>
+             <div class="service-card">
+                <div class="corner-shape"></div>
+
+                <div class="service-icon">
+<i class="bi bi-globe-central-south-asia"></i>                </div>
+
+                <h3>Responsive Design</h3>
+
+                <p>
+We are the no.1  web design firm in Marthandam. Our specialty is designing mobile-responsive, visually appealing websites. To keep people’s attention, we make sure to offer engaging and educational content. Through our expertise, we make sure that our professional website provides relevant messages to engaging audiences effectively and efficiently.            </div>
+
+        </div>
+
+    </div>
+</section>
+<section id="portfolio">
+
+    <div class="portfolio-heading">
+        <h2>Our Latest Portfolio</h2>
+        <p>
+            Innovative digital solutions crafted for modern businesses.
+        </p>
+    </div>
+
+    <div class="portfolio-scroll">
+
+        <!-- CARD 1 -->
+        <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200"
+                alt="Portfolio">
+
+            <div class="portfolio-overlay">
+                <span class="portfolio-tag">Mobile App</span>
+
+                <h3>Fintech Mobile Application</h3>
+
+                <a href="#" class="explore-btn">
+                    Explore
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200"
+                alt="Portfolio">
+
+            <div class="portfolio-overlay">
+                <span class="portfolio-tag">Web Development</span>
+
+                <h3>Enterprise CRM Platform</h3>
+
+                <a href="#" class="explore-btn">
+                    Explore
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200"
+                alt="Portfolio">
+
+            <div class="portfolio-overlay">
+                <span class="portfolio-tag">Digital Marketing</span>
+
+                <h3>SEO Growth Campaign</h3>
+
+                <a href="#" class="explore-btn">
+                    Explore
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200"
+                alt="Portfolio">
+
+            <div class="portfolio-overlay">
+                <span class="portfolio-tag">UI/UX Design</span>
+
+                <h3>Creative Product Interface</h3>
+
+                <a href="#" class="explore-btn">
+                    Explore
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="portfolio-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200"
+                alt="Portfolio">
+
+            <div class="portfolio-overlay">
+                <span class="portfolio-tag">Ecommerce</span>
+
+                <h3>Luxury Shopping Platform</h3>
+
+                <a href="#" class="explore-btn">
+                    Explore
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section id="technologies">
+
+    <div class="container">
+
+        <div class="technology-heading" data-aos="fade-up">
+            <span>Our Tech Stack</span>
+            <h2>Technologies We Work With</h2>
+            <p>
+                We build scalable digital products using modern technologies,
+                frameworks, cloud platforms, and enterprise-grade tools.
+            </p>
+        </div>
+
+        <div class="technology-grid">
+
+            <!-- FRONTEND -->
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                <h4>HTML5</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="150">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                <h4>CSS3</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                <h4>JavaScript</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="250">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+                <h4>Bootstrap</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+                <h4>React</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="350">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg">
+                <h4>Vue JS</h4>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+                <h4>PHP</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="450">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg">
+                <h4>Laravel</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+                <h4>Node JS</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="550">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+                <h4>Python</h4>
+            </div>
+
+            <!-- DATABASE -->
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="600">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+                <h4>MySQL</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="650">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+                <h4>MongoDB</h4>
+            </div>
+
+            <!-- MOBILE -->
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="700">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg">
+                <h4>Flutter</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="750">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg">
+                <h4>Android</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="800">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg">
+                <h4>iOS</h4>
+            </div>
+
+            <!-- CLOUD -->
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="850">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">
+                <h4>Docker</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="900">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+                <h4>Git</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="950">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+                <h4>GitHub</h4>
+            </div>
+
+            <div class="tech-card" data-aos="fade-up" data-aos-delay="1000">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">
+                <h4>Firebase</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  <section id="idea-to-app" class="idea-to-app">
+    <div class="container">
+      <div class="idea-header" data-aos="fade-up">
+        <h2 class="idea-title">From <span>Idea</span> to <span>App</span></h2>
+        <p class="idea-subtitle">Within Weeks, Not Months</p>
+        <div class="idea-divider"></div>
+      </div>
+
+      <div class="process-timeline">
+        <div class="timeline-line" id="timelineLine"></div>
+
+        <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+          <div class="step-number"><span>01</span></div>
+          <div class="step-card">
+            <div class="step-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3>Discovery & Ideation</h3>
+            <p>We dive deep into your vision, define goals, and outline the roadmap to bring your idea to life.</p>
+            <div class="step-week">Week 1</div>
+          </div>
+        </div>
+
+        <div class="process-step" data-aos="fade-left" data-aos-delay="200">
+          <div class="step-number"><span>02</span></div>
+          <div class="step-card">
+            <div class="step-icon">
+              <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Pixel-perfect interfaces crafted for engagement, with wireframes and interactive prototypes.</p>
+            <div class="step-week">Week 2</div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+          <div class="step-number"><span>03</span></div>
+          <div class="step-card">
+            <div class="step-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Development</h3>
+            <p>Agile sprints with clean architecture — building your app with the latest technologies.</p>
+            <div class="step-week">Week 3–5</div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step" data-aos="fade-left" data-aos-delay="400">
+          <div class="step-number"><span>04</span></div>
+          <div class="step-card">
+            <div class="step-icon">
+              <i class="fa-solid fa-vial"></i>
+            </div>
+            <h3>Testing & QA</h3>
+            <p>Rigorous testing across devices and platforms to ensure a flawless user experience.</p>
+            <div class="step-week">Week 6</div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="process-step" data-aos="fade-right" data-aos-delay="500">
+          <div class="step-number"><span>05</span></div>
+          <div class="step-card">
+            <div class="step-icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h3>Launch</h3>
+            <p>Seamless deployment to App Store & Google Play with full launch support and marketing guidance.</p>
+            <div class="step-week">Week 7</div>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="process-step" data-aos="fade-left" data-aos-delay="600">
+          <div class="step-number"><span>06</span></div>
+          <div class="step-card">
+            <div class="step-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3>Growth & Support</h3>
+            <p>Ongoing maintenance, analytics integration, and iterative improvements to scale your success.</p>
+            <div class="step-week">Ongoing</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="idea-cta" data-aos="zoom-in" data-aos-delay="700">
+        <a href="#" class="btn-idea-cta" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Start Your Journey <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section><!-- End Idea to App -->
+
+
+  <section id="hero">
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-lg-1 d-flex align-items-center">
+          <div data-aos="zoom-out">
+            <h2>Get Your Business into Everyone's Pockets!</h2>
+            <h1>By Award Winning Mobile Apps Development Company</h1>
+            <div class="text-center text-lg-start">
+              <a href="#" class="btn-get-started" data-bs-toggle="modal" data-bs-target="#exampleModal">Get a Free
+                Quote</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6  order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
+          <!-- <img src="assets/img/hero-img.png" class="img-fluid animated" alt=""> -->
+          <div class="c-form">
+            <h1 class="f-title">Get in Touch - We're Here to Help</h1>
+            <?php if (!empty($errorMsg)) { ?>
+            <div style="color:red; margin-bottom:10px;">
+              <?php echo htmlspecialchars($errorMsg); ?>
+            </div>
+            <?php } ?>
+            <form action="mobile_app_development/form_submit.php" method="post">
+
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control" name="email" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Mobile</label>
+                <input type="text" class="form-control" name="phone" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Requirement</label>
+                <textarea class="form-control" name="requirement" rows="3" required></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="g-store-btn">
+                  Get a Free Quote
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section>
+
+  <main id="main">
+
+    <section class="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <p>Build App For Your Business With India's Leading App Development Company!</p>
+        </div>
+        <div class="box-googleplay" data-aos="fade-left">
+          <div class="row">
+            <div class="col-lg-7 col-sm-12">
+              <div class="g-store">
+                <img src="assets/img/g-store.png">
+                <h1>Android App Development</h1>
+                <p>Attract more customers on popular Android mobile devices using Weft's end-to-end android mobile app
+                  development, integration, implementation, and support services.</p>
+                <a href="#" class="g-store-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Talk to experts
+                  now</a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+              <img src="assets/img/g-store-img.png" class="app-store-img">
+            </div>
+          </div>
+        </div>
+        <div class="box-googleplay" data-aos="fade-right">
+          <div class="row">
+            <div class="col-lg-7 col-sm-12">
+              <div class="g-store">
+                <img src="assets/img/ios-store.png">
+                <h1>iOS App Development</h1>
+                <p>Aid businesses to reach more business goals using iOS mobile app development tools Gain an edge with
+                  Online turnkey marketplace solutions, digital enablements, design and development services, and growth
+                  solutions.</p>
+                <a href="#" class="g-store-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Talk to experts
+                  now</a>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12">
+              <img src="assets/img/app-store-img.png" class="app-store-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <p>Our Products</p>
+        </div>
+
+        <div class="row" data-aos="fade-left">
+          <div class="col-lg-3 col-md-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+              <i class='bx bx-car'></i>
+              <h3><a href="">Online Cab Booking/Riding App</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <i class='bx bx-book-content'></i>
+              <h3><a href="">E-Learning App</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+              <i class='bx bx-cart-alt'></i>
+              <h3><a href="">E-Commerce App</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
+              <i class='bx bx-package'></i>
+              <h3><a href="">Food Delivery App</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <i class='bx bx-calculator'></i>
+              <h3><a href="">Productivity apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
+              <i class='bx bx-camera-movie'></i>
+              <h3><a href="">Entertainment apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bx-game'></i>
+              <h3><a href="">Game apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bx-heart'></i>
+              <h3><a href="">Health and Fitness Apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bxs-cable-car'></i>
+              <h3><a href="">Travel and Tourism Apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bx-wallet'></i>
+              <h3><a href="">Finance and Budgeting Apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo</a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bx-news'></i>
+              <h3><a href="">News and Magazine Apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo >></a>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 r-pad">
+            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
+              <i class='bx bxl-meta'></i>
+              <h3><a href="">Social Networking Apps</a></h3>
+            </div>
+            <a href="" class="g-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Demo >></a>
+          </div>
+
+
+          <!-- <div class="col-lg-3 col-md-4 mt-4"> -->
+          <!-- <div class="icon-box" data-aos="zoom-in" data-aos-delay="550"> -->
+          <!-- <i class="ri-base-station-line" style="color: #ff5828;"></i> -->
+          <!-- <h3><a href="">Verdo Park</a></h3> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="col-lg-3 col-md-4 mt-4"> -->
+          <!-- <div class="icon-box" data-aos="zoom-in" data-aos-delay="600"> -->
+          <!-- <i class="ri-fingerprint-line" style="color: #29cc61;"></i> -->
+          <!-- <h3><a href="">Flavor Nivelanda</a></h3> -->
+          <!-- </div> -->
+          <!-- </div> -->
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+
+    <br>
+    <div class="section-title aos-init aos-animate" data-aos="fade-up">
+
+      <p>Check Our Projects</p>
+    </div>
+
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+        <div class="slider">
+          <input type="radio" name="testimonial" id="t-1">
+          <input type="radio" name="testimonial" id="t-2">
+          <input type="radio" name="testimonial" id="t-3" checked>
+          <input type="radio" name="testimonial" id="t-4">
+          <input type="radio" name="testimonial" id="t-5">
+          <div class="testimonials">
+            <label class="item" for="t-1">
+              <img class="carousel-image " src="assets/img/gallery/gallery-1.jpg" alt="Image 1">
+              <p class="c-title">Neogen Care</p>
+            </label>
+            <label class="item" for="t-2">
+              <img class="carousel-image " src="assets/img/gallery/gallery-2.jpg" alt="Image 1">
+              <p class="c-title">Neogen Clinician App</p>
+            </label>
+            <label class="item" for="t-3">
+              <img class="carousel-image " src="assets/img/gallery/gallery-3.jpg" alt="Image 1">
+              <p class="c-title">Young Innovators <br>Programme</p>
+            </label>
+            <label class="item" for="t-4">
+              <img class="carousel-image " src="assets/img/gallery/gallery-4.jpg" alt="Image 1">
+              <p class="c-title">Knokkout <br>E-Commerce</p>
+            </label>
+            <label class="item" for="t-5">
+              <img class="carousel-image " src="assets/img/gallery/gallery-5.png" alt="Image 1">
+              <p class="c-title">Cloi.ai </p>
+            </label>
+          </div>
+          <br />
+          <div class="dots">
+            <label for="t-1"></label>
+            <label for="t-2"></label>
+            <label for="t-3"></label>
+            <label for="t-4"></label>
+            <label for="t-5"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row aos-init aos-animate" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+
+              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="0"
+                class="purecounter">25+</span>
+              <p>Team</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="0"
+                class="purecounter">2</span>
+              <p>Location</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="0"
+                class="purecounter">5</span>
+              <p>Year</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="0"
+                class="purecounter">200+</span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="app-platform">
+      <div class="container-fluid">
+        <div class="section-title" data-aos="fade-up">
+          <p>How We Develop Your Product</p>
+        </div>
+        <img src="assets/img/app-dev.jpg" class="app-dev-img">
+      </div>
+    </section>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="c-box">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="g-store1">
+                <h1><strong>Over 250+ Satisfied Clients & Growing</strong></h1>
+                <img src="assets/img/c-img.jpg" class="c-l-img">
+              </div>
+              <div class="review">
+                <!-- <p>We had an incredible experience working with Weft and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the product concept so quickly.</p> -->
+                <!-- <strong>Mr.Jhon Wick</strong><br> -->
+                <!-- <span>business entrepreneur</span> -->
+                <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+                  <div class="carousel-inner w-100">
+                    <div class="carousel-item active">
+                      <div class="col-md-12">
+                        <div class="card card-body">
+                          <strong>Exceptional Service!</strong>
+                          <p>"Working with Novelx Technologies was an amazing experience. They helped bring our app idea
+                            to life seamlessly and delivered beyond our expectations. Highly recommend!"</p>
+                          <strong>Mr.Mathew</strong>
+                          <span>Cloi.ai</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-12">
+                        <div class="card card-body">
+                          <strong>Professional and Timely</strong>
+                          <p>"Novelx Technologies team was professional, understanding our requirements perfectly. The
+                            project was completed on time with excellent quality. Great job!"</p>
+                          <strong>Mr.Parameswaran</strong>
+                          <span>Omega OS</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-12">
+                        <div class="card card-body">
+                          <strong>Innovative and Creative!</strong>
+                          <p>"Novelx Technologies displayed remarkable creativity and innovation in designing our mobile
+                            app. Their attention to detail and dedication to our project was commendable."</p>
+                          <strong>Mr.Sam </strong>
+                          <span>Blisser</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-12">
+                        <div class="card card-body">
+                          <strong>Excellent Communication</strong>
+                          <p>"One of the best aspects of working with Novelx was their clear communication. They kept us
+                            updated throughout the project, ensuring a smooth and efficient process."</p>
+                          <strong>Mr.Karthigeyan</strong>
+                          <span>Coin zeb</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="col-md-12">
+                        <div class="card card-body">
+                          <strong>Highly Recommended!</strong>
+                          <p>"I can't speak highly enough about Novelx Technologies. They understood our concept and
+                            transformed it into a highly functional app. Exceptional quality and service."</p>
+                          <strong>Mr.Rajith</strong><br>
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+
+              <form action="mobile_app_development/form_submit.php" method="post">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="number" class="form-control" name="phone" id="mobile" placeholder="Your Mobile"
+                      required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="requirement" rows="5" placeholder="Requirements"
+                    required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Get a Free Quote</button></div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+    <div class="quick_contact">
+      <a href="https://api.whatsapp.com/send?phone=+919384348790&text=hello i have a app enquiry" class="qwhtsapp"
+        target="_blank">
+        <i class="bx bxl-whatsapp quick_contact_icon"></i>
+      </a>
+    </div>
+    <div class="quick_contact1">
+      <a href="tel:+919384348790" class="qcall" target="_blank">
+        <i class="bx bxs-phone-call quick_contact_icon"></i>
+      </a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Enquiry</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="output_message text-center"></div>
+            <form action="mobile_app_development/form_submit.php" method="post">
+              <div class="form-group mt-3 ">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+              </div>
+              <div class="form-group mt-3  ">
+                <input type="mobile" class="form-control" name="phone" id="mobile" placeholder="Your Mobile"
+                  required="">
+              </div>
+              <div class="form-group mt-3 ">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="requirement" rows="5" placeholder="Requirements"
+                  required></textarea>
+              </div>
+              <div class="text-center"><button class="g-store-btn1" type="submit">Get a Free Quote</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="text-center boxi-icon">
+        <i class='bx bxl-facebook-circle'></i>
+        <i class='bx bxl-instagram-alt'></i>
+        <i class='bx bxl-twitter'></i>
+        <i class='bx bxl-linkedin'></i>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Novelx Technologies</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script>
+    $('.carousel .carousel-item').each(function () {
+      var minPerSlide = 4;
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < minPerSlide; i++) { next = next.next(); if (!next.length) { next = $(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); }
+    });
+  </script>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      const FRAME_COUNT = 70;
+      const FILE_PREFIX = 'assets/novelx/download (4)_';
+
+      const canvas = document.getElementById('heroSequenceCanvas');
+      const ctx = canvas.getContext('2d');
+      const section = document.getElementById('hero-sequence');
+      const progressBar = document.getElementById('sequenceProgress');
+      const scrollIndicator = document.getElementById('scrollIndicator');
+      const sequenceContent = document.getElementById('sequenceContent');
+      const loader = document.getElementById('sequenceLoader');
+
+      const images = [];
+      let loadedCount = 0;
+      let currentFrame = -1;
+      let ticking = false;
+      let allImagesLoaded = false;
+
+      /* --- Pad frame number to 3 digits --- */
+      function padNum(n) {
+        return String(n).padStart(3, '0');
+      }
+
+      /* --- Build image path --- */
+      function framePath(index) {
+        return FILE_PREFIX + padNum(index) + '.jpg';
+      }
+
+      /* --- Resize canvas --- */
+      function resizeCanvas() {
+        const wrap = canvas.parentElement;
+        canvas.width = wrap.clientWidth;
+        canvas.height = wrap.clientHeight;
+        if (currentFrame >= 0) {
+          renderFrame(currentFrame);
+        }
+      }
+
+      /* --- Draw a frame covering the canvas --- */
+      function renderFrame(index) {
+        if (index < 0 || index >= images.length || !images[index]) return;
+        const img = images[index];
+
+        // Skip rendering if image hasn't loaded yet
+        if (!img.complete && !img.width) return;
+
+        const cw = canvas.width;
+        const ch = canvas.height;
+
+        // Clear canvas first
+        ctx.fillStyle = '#000';
+        ctx.fillRect(0, 0, cw, ch);
+
+        // If image is loaded, draw it
+        if (img.width && img.height) {
+          const imgRatio = img.width / img.height;
+          const canvasRatio = cw / ch;
+
+          let drawW, drawH, drawX, drawY;
+          if (imgRatio > canvasRatio) {
+            drawH = ch;
+            drawW = ch * imgRatio;
+          } else {
+            drawW = cw;
+            drawH = cw / imgRatio;
+          }
+          drawX = (cw - drawW) / 2;
+          drawY = (ch - drawH) / 2;
+
+          ctx.drawImage(img, drawX, drawY, drawW, drawH);
+        }
+      }
+
+      /* --- Scroll handler --- */
+      function onScroll() {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(function () {
+            const rect = section.getBoundingClientRect();
+            const sectionHeight = section.offsetHeight;
+            const scrollStart = rect.top + window.scrollY;
+            const currentScroll = window.scrollY;
+
+            // Calculate scroll progress relative to section (0 to 1)
+            let progress = 0;
+            if (currentScroll >= scrollStart) {
+              progress = Math.min((currentScroll - scrollStart) / (sectionHeight - window.innerHeight), 1);
+            }
+
+            const frameIndex = Math.min(Math.floor(progress * FRAME_COUNT), FRAME_COUNT - 1);
+
+            if (frameIndex !== currentFrame && allImagesLoaded) {
+              currentFrame = frameIndex;
+              renderFrame(currentFrame);
+            }
+
+            /* Progress bar */
+            progressBar.style.width = (progress * 100) + '%';
+
+            /* Scroll indicator – hide after 10% */
+            if (progress > 0.1) {
+              scrollIndicator.classList.add('hidden');
+            } else {
+              scrollIndicator.classList.remove('hidden');
+            }
+
+            /* Content – show in last 30% */
+            if (progress > 0.7) {
+              sequenceContent.classList.add('visible');
+            } else {
+              sequenceContent.classList.remove('visible');
+            }
+
+            ticking = false;
+          });
+        }
+      }
+
+      /* --- Preload images --- */
+      function preloadImages() {
+        let loadTimeout = setTimeout(function() {
+          allImagesLoaded = true;
+          loader.classList.add('loaded');
+          renderFrame(0);
+        }, 3000);
+
+        for (let i = 0; i < FRAME_COUNT; i++) {
+          const img = new Image();
+          img.src = framePath(i);
+          img.onload = function () {
+            loadedCount++;
+            if (loadedCount === 1) {
+              /* Draw the first frame immediately */
+              resizeCanvas();
+              renderFrame(0);
+            }
+            if (loadedCount === FRAME_COUNT) {
+              clearTimeout(loadTimeout);
+              allImagesLoaded = true;
+              loader.classList.add('loaded');
+            }
+          };
+          img.onerror = function () {
+            loadedCount++;
+            if (loadedCount === FRAME_COUNT) {
+              clearTimeout(loadTimeout);
+              allImagesLoaded = true;
+              loader.classList.add('loaded');
+            }
+          };
+          images.push(img);
+        }
+      }
+
+      /* --- Init --- */
+      resizeCanvas();
+      preloadImages();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', resizeCanvas);
+    })();
+  </script>
+  <script>
+    /* ===== Team Cards – Hover Image Swap + Flip ===== */
+    document.querySelectorAll('.team-card').forEach(function (card) {
+      var img = card.querySelector('.main-img');
+      var rotateBtn = card.querySelector('.rotate-btn');
+      var rotateBtn1 = card.querySelector('.rotate-btn1');
+
+      if (!img) return;
+
+      var originalSrc = img.src;
+      var hoverSrc = img.getAttribute('data-hover');
+
+      /* Image swap on hover */
+      if (hoverSrc) {
+        card.addEventListener('mouseenter', function () {
+          if (!card.classList.contains('flipped')) {
+            img.src = hoverSrc;
+          }
+        });
+        card.addEventListener('mouseleave', function () {
+          if (!card.classList.contains('flipped')) {
+            img.src = originalSrc;
+          }
+        });
+      }
+
+      if (rotateBtn) {
+        rotateBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          card.classList.add('flipped');
+        });
+      }
+
+      if (rotateBtn1) {
+        rotateBtn1.addEventListener('click', function (e) {
+          e.stopPropagation();
+          card.classList.remove('flipped');
+        });
+      }
+    });
+  </script>
+  <script>
+    /* ===== Timeline Scroll Progress ===== */
+    (function () {
+      var line = document.getElementById('timelineLine');
+      var timeline = document.querySelector('.process-timeline');
+      if (!line || !timeline) return;
+
+      function updateTimeline() {
+        var rect = timeline.getBoundingClientRect();
+        var timelineH = timeline.offsetHeight;
+        var viewH = window.innerHeight;
+
+        /* How far the section has scrolled into view */
+        var scrolled = viewH - rect.top;
+        var progress = Math.min(Math.max(scrolled / (timelineH + viewH * 0.3), 0), 1);
+
+        line.style.height = (progress * timelineH) + 'px';
+      }
+
+      window.addEventListener('scroll', updateTimeline, { passive: true });
+      window.addEventListener('load', updateTimeline);
+    })();
+  </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const counters = document.querySelectorAll(".stat-number");
+
+    counters.forEach(counter => {
+
+        const originalText = counter.textContent.trim();
+
+        // Get numeric value
+        const target = parseInt(originalText.replace(/[^0-9]/g, ''));
+
+        // Get suffix like +
+        const suffix = originalText.replace(/[0-9]/g, '');
+
+        let current = 0;
+        const speed = 30;
+
+        const updateCounter = () => {
+
+            const increment = Math.ceil(target / 100);
+
+            current += increment;
+
+            if (current < target) {
+
+                counter.textContent = current + suffix;
+
+                setTimeout(updateCounter, speed);
+
+            } else {
+
+                counter.textContent = target + suffix;
+            }
+        };
+
+        updateCounter();
+    });
+
+});
+</script>
+<script>
+  const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+portfolioCards.forEach(card => {
+
+    card.addEventListener('mouseenter', () => {
+        card.classList.add('active');
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.classList.remove('active');
+    });
+
+});
+</script>
+<script>
+  /* =========================================
+   TECHNOLOGY SECTION FADE IN ANIMATION
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const techCards = document.querySelectorAll('.tech-card');
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) => {
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add('show-tech');
+
+            }
+
+        });
+
+    }, {
+        threshold:0.15
+    });
+
+    techCards.forEach((card, index) => {
+
+        card.style.opacity = "0";
+        card.style.transform = "translateY(40px)";
+        card.style.transition = `0.6s ease ${index * 0.05}s`;
+
+        observer.observe(card);
+
+    });
+
+});
+
+/* SHOW EFFECT */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const style = document.createElement('style');
+
+    style.innerHTML = `
+        .show-tech{
+            opacity:1 !important;
+            transform:translateY(0px) !important;
+        }
+    `;
+
+    document.head.appendChild(style);
+
+});
+</script>
+</body>
+
+</html>
