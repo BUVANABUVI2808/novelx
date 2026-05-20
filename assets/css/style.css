@@ -1593,7 +1593,7 @@ a:hover {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 66px;
+  max-height: 42px;
 }
 
 
@@ -1641,7 +1641,7 @@ a:hover {
   height: 2px;
   bottom: 3px;
   left: 30px;
-  background-color: #1acc8d;
+  background-color: #f22735;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;

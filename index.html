@@ -1886,9 +1886,7 @@ portfolioCards.forEach(card => {
 });
 </script>
 <script>
-  /* =========================================
-   TECHNOLOGY SECTION FADE IN ANIMATION
-========================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -1953,6 +1951,96 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { passive: false });
 });
 </script> -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector("#navbar");
+  const navLinks = document.querySelectorAll(".nav-link");
+  const sections = [
+    { id: "hero-sequence", link: "#hero-sequence" },
+    { id: "about", link: "#about" },
+    { id: "features", link: "#features" },
+    { id: "contact", link: "#contact" }
+  ];
+
+  // Function to update active navbar link based on scroll position
+  function updateActiveNav() {
+    let current = "";
+
+    sections.forEach(section => {
+      const element = document.getElementById(section.id);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        // If section is in the viewport (top of section is visible)
+        if (rect.top <= 150) {
+          current = section.link;
+        }
+      }
+    });
+
+    // Remove active class from all links
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+    });
+
+    // Add active class to current link
+    if (current) {
+      const activeLink = document.querySelector(`.nav-link[href="${current}"]`);
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
+    }
+  }
+
+  // Update active nav on scroll
+  window.addEventListener("scroll", updateActiveNav);
+
+  // Initialize on page load - set Home as active
+  updateActiveNav();
+
+  // Close mobile menu when a link is clicked
+  navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      // Update active state
+      navLinks.forEach(l => l.classList.remove("active"));
+      this.classList.add("active");
+
+      // Close mobile navbar if open
+      const navbarToggle = document.querySelector(".mobile-nav-toggle");
+      const navbar = document.querySelector("#navbar");
+      if (navbar.classList.contains("navbar-mobile")) {
+        navbar.classList.remove("navbar-mobile");
+        navbarToggle.classList.remove("bi-x");
+        navbarToggle.classList.add("bi-list");
+      }
+    });
+  });
+
+  // Make CTA buttons activate Services section
+  const ctaButtons = document.querySelectorAll(".btn-idea-cta, .btn-get-started");
+  ctaButtons.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Activate Services in navbar
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+      });
+      const servicesLink = document.querySelector('.nav-link[href="#features"]');
+      if (servicesLink) {
+        servicesLink.classList.add("active");
+      }
+
+      // Optional: Scroll to features section
+      const featuresSection = document.getElementById("features");
+      if (featuresSection) {
+        featuresSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+});
+</script>
+
 </body>
 
 </html>
