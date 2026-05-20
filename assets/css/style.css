@@ -1573,7 +1573,7 @@ a:hover {
   background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  height: 80px;
+  height: 58px;
 }
 
 #header .logo h1 {
